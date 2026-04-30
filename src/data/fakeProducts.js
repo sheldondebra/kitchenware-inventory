@@ -5,7 +5,7 @@ export const fakeProducts = [
     costPrice: 80,
     sellingPrice: 120,
     quantity: 15,
-    lowStockLevel: 5,
+    lowStockLevel: 15,
   },
   {
     id: 2,

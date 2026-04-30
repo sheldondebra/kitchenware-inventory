@@ -26,7 +26,7 @@ const DashboardNav = () => {
           </div>
           <ArrowDown/>
         </div>
-        <Menu size={37}/>
+        <Menu size={37} className='md:hidden'/>
       </div>
     </section>
   );

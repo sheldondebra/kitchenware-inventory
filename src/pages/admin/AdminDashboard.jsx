@@ -10,8 +10,8 @@ const AdminDashboard = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 '>
         <StateCard title="Total Sales" value="GHS 34,440" subtitle="Today" />
         <StateCard title="Total Profits" value="GHS 740" subtitle="Today" />
-        <StateCard title="Low Stock Items" value="4" subtitle="Today" />
-        <StateCard title="Total Products" value="23" subtitle="Today" />
+        <StateCard title="Low Stock Items" value="4" subtitle="Needs Restock" />
+        <StateCard title="Total Products" value="23" subtitle="In inventory" />
       </div>
       <DataTable/>
     </div>
