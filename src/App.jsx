@@ -9,6 +9,7 @@ import Reports from "./pages/admin/Reports";
 import SalesLayout from "./pages/sales/SalesLayout";
 import SalesDashboard from "./pages/sales/SalesDashboard";
 import ForgetPassword from "./pages/auth/ForgetPassword";
+import Settings from "./pages/admin/Settings";
 
 const App = () => {
  
@@ -21,9 +22,10 @@ const App = () => {
       {/* Admin Routes */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
-        <Route path="products" element={<Products />} />
-        <Route path="restock" element={<Restock />} />
-        <Route path="reports" element={<Reports />} />
+        <Route path="/admin/products" element={<Products />} />
+        <Route path="/admin/restock" element={<Restock />} />
+        <Route path="/admin/reports" element={<Reports />} />
+        <Route path="/admin/settings" element={<Settings/>}/>
       </Route>
 
       {/* Sales Routes */}

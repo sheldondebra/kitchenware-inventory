@@ -1,13 +1,13 @@
-import { ArrowDown, Bell, Search } from 'lucide-react';
+import { ArrowDown, Bell, Menu, Search } from 'lucide-react';
 import React from 'react'
 
 const DashboardNav = () => {
   return (
     <section className="flex justify-between">
       <div>
-        <div>
-          <h1 className='text-2xl font-bold'>Hello Sheldon 👋🏾</h1>
-          <p className='text-gray-400'>Good Morning</p>
+        <div className='hidden md:block'>
+          <h1 className=' text-xl md:text-2xl font-bold'>Hello Sheldon 👋🏾</h1>
+          <p className='text-gray-400 text-'>Good Morning</p>
         </div>
       </div>
       <div className="flex items-center justify-center space-x-4">
@@ -18,7 +18,7 @@ const DashboardNav = () => {
         <div className="bg-gray-200 p-3 rounded-xl">
           <Bell />
         </div>
-        <div className='border flex rounded-lg border-gray-300 items-center px-4 py-1 gap-3'>
+        <div className='border md:flex rounded-lg border-gray-300 items-center px-4 py-1 gap-3 hidden'>
           <img src="https://i.pravatar.cc/41" alt="users" className='rounded-md h-10 w-10' />
           <div className='space-y-1'>
             <h1 className='font-bold'>Sheldon Debra</h1>
@@ -26,6 +26,7 @@ const DashboardNav = () => {
           </div>
           <ArrowDown/>
         </div>
+        <Menu size={37} className='md:hidden'/>
       </div>
     </section>
   );
