@@ -8,6 +8,7 @@ import Restock from "./pages/admin/Restock";
 import Reports from "./pages/admin/Reports";
 import SalesLayout from "./pages/sales/SalesLayout";
 import SalesDashboard from "./pages/sales/SalesDashboard";
+import ForgetPassword from "./pages/auth/ForgetPassword";
 
 const App = () => {
  
@@ -15,6 +16,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/forgetpassword" element={<ForgetPassword/>}/>
 
       {/* Admin Routes */}
       <Route path="/admin" element={<AdminLayout />}>
